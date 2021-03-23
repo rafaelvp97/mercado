@@ -1,0 +1,84 @@
+<link rel="lista-tarefas.css" type="text">
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"></a>
+  <form class="form-center">
+    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+  </form>
+</nav>
+
+<div><h2>Ofertas</h2></div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="assets/sal.jfif" alt="Imagem de capa do card">
+        <h5 class="card-title">Sal</h5>
+        <p class="card-text"></p>
+        <th class="text-center">
+          <a [routerLink]="['/tarefas/sal']"
+             class="btn btn-xs btn-success">
+             <span class="glyphicon glyphicon-plus" 
+               aria-hidden="true"></span> 
+          </a>
+      </th>
+      </div>
+    </div>
+  </div>
+  <div id="fd"><h2>Açougue</h2></div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="assets/carne.jfif" alt="Imagem de capa do card">
+        <h5 class="card-title">Carne</h5>
+        <p class="card-text"></p>
+        <th class="text-center">
+          <a [routerLink]="['/tarefas/carne']"
+             class="btn btn-xs btn-success">
+             <span class="glyphicon glyphicon-plus" 
+               aria-hidden="true"></span> 
+          </a>
+      </th>
+      </div>
+    </div>
+  </div>
+</div>
+<div><h2>Arroz</h2></div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="assets/arroz.jfif" alt="Imagem de capa do card">
+        <h5 class="card-title">Arroz</h5>
+        <p class="card-text">Pacote do tio João de 5kg.</p>
+        <th class="text-center">
+          <a [routerLink]="['/tarefas/arroz']"
+             class="btn btn-xs btn-success">
+             <span class="glyphicon glyphicon-plus" 
+               aria-hidden="true"></span> 
+          </a>
+      </th>
+      </div>
+    </div>
+  </div>
+  <div><h2>Bebidas</h2></div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="assets/refrir.jfif" alt="Imagem de capa do card">
+        <h5 class="card-title">Refrigerante</h5>
+        <p class="card-text">Refrigerante IT de 2 litros</p>
+        <th class="text-center">
+          <a [routerLink]="['/tarefas/bebidas']"
+             class="btn btn-xs btn-success">
+             <span class="glyphicon glyphicon-plus" 
+               aria-hidden="true"></span> 
+          </a>
+      </th>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p *ngIf="tarefas.length==0">Nenhuma tarefa cadastrada.</p>
